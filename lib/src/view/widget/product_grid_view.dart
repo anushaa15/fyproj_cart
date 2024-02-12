@@ -89,7 +89,7 @@ class ProductGridView extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 5),
+            const SizedBox(height: 2),
             Row(
               children: [
                 Text(

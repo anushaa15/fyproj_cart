@@ -37,7 +37,7 @@ class ProductListScreen extends StatelessWidget {
 
   PreferredSize get _appBar {
     return PreferredSize(
-      preferredSize: const Size.fromHeight(100),
+      preferredSize: const Size.fromHeight(150),
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
@@ -55,7 +55,7 @@ class ProductListScreen extends StatelessWidget {
 
   Widget _recommendedProductListView(BuildContext context) {
     return SizedBox(
-      height: 170,
+      height: 200,
       child: ListView.builder(
           padding: const EdgeInsets.symmetric(vertical: 10),
           shrinkWrap: true,
@@ -65,7 +65,7 @@ class ProductListScreen extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.only(right: 20),
               child: Container(
-                width: 300,
+                width: 350,
                 decoration: BoxDecoration(
                   color: AppData.recommendedProducts[index].cardBackgroundColor,
                   borderRadius: BorderRadius.circular(15),
@@ -79,7 +79,7 @@ class ProductListScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            '30% OFF DURING \nCOVID 19',
+                            'Only Personalized Gifts',
                             style: Theme.of(context)
                                 .textTheme
                                 .displaySmall
@@ -100,7 +100,7 @@ class ProductListScreen extends StatelessWidget {
                               ),
                             ),
                             child: Text(
-                              "Get Now",
+                              "Only in Glitz",
                               style: TextStyle(
                                 color: AppData.recommendedProducts[index]
                                     .buttonTextColor!,
@@ -138,7 +138,7 @@ class ProductListScreen extends StatelessWidget {
             onPressed: () {},
             style: TextButton.styleFrom(foregroundColor: AppColor.darkOrange),
             child: Text(
-              "SEE ALL",
+              "Categories",
               style: Theme.of(context)
                   .textTheme
                   .titleLarge
@@ -173,7 +173,7 @@ class ProductListScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Hello Sina",
+                  "Hello user ",
                   style: Theme.of(context).textTheme.displayLarge,
                 ),
                 Text(
