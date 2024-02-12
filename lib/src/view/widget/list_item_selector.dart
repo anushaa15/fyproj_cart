@@ -25,7 +25,7 @@ class _ListItemSelectorState extends State<ListItemSelector> {
         margin: const EdgeInsets.only(left: 5),
         duration: const Duration(milliseconds: 500),
         width: 50,
-        height: 10,
+        height: 100,
         decoration: BoxDecoration(
           color: item.isSelected == false
               ? const Color(0xFFE5E6E8)

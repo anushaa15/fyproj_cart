@@ -5,7 +5,7 @@ import 'package:e_commerce_flutter/core/app_color.dart';
 import 'package:e_commerce_flutter/src/controller/product_controller.dart';
 import 'package:e_commerce_flutter/src/view/widget/product_grid_view.dart';
 import 'package:e_commerce_flutter/src/view/widget/list_item_selector.dart';
-
+import 'signin_screen.dart';
 enum AppbarActionType { leading, trailing }
 
 final ProductController controller = Get.put(ProductController());
@@ -173,7 +173,7 @@ class ProductListScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Hello user ",
+                  "Hello  username!",
                   style: Theme.of(context).textTheme.displayLarge,
                 ),
                 Text(
